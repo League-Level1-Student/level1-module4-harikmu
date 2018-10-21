@@ -22,9 +22,10 @@ public class NastySurprise implements ActionListener {
 		p.add(firstButton);
 		p.add(secondButton);
 		firstButton.setText("Trick");
-		secondButton.setText("Treat");
+		secondButton.setText("Treatt");
 		firstButton.addActionListener(this);
 		secondButton.addActionListener(this);
+
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
