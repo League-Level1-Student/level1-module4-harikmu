@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -15,6 +16,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+import javafx.scene.layout.Background;
 import sun.launcher.resources.launcher;
 
 public class TypingTutor implements KeyListener {
@@ -51,16 +53,27 @@ public void keyTyped(KeyEvent e) {
 @Override
 public void keyPressed(KeyEvent e) {
 	// TODO Auto-generated method stub
-	System.out.println(currentLetter);
-	
+	System.out.println("you typed: " + currentLetter);
+	if(e.getKeyChar() == currentLetter) {
+		l.setBackground(Color.MAGENTA);
+		l.setOpaque(true);
+		System.out.println("correct");
+	}
+	if(e.getKeyChar() != currentLetter) {
+		l.setBackground(Color.orangfse);
+		l.setOpaque(true);
+	}
 }
 @Override
 public void keyReleased(KeyEvent e) {
 	// TODO Auto-generated method stub
 	currentLetter = generateRandomLetter();
 	l.setText(""+currentLetter);
+	
 }
 }
+
+
 
 
 	
