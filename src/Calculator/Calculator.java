@@ -1,3 +1,4 @@
+package Calculator;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,22 +20,22 @@ import javax.swing.JPanel;
 import javafx.scene.layout.Background;
 import sun.launcher.resources.launcher;
 
-public class Calculator implements ActionListener {
-	public static void main(String[] args) throws Exception {
-		Calculator calculator = new Calculator();
-		calculator.operations();
+public class Calculator{
+
+	
+	public int add(int a, int b) {
+		return a + b;
 	}
-	JFrame frame = new JFrame();
-	private void operations() {
-		frame.setVisible(true);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(500, 500);
+	public int subtract(int a, int b) {
+		return a - b;
 	}
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
+	public int multiply(int a, int b) {
+		return a * b;
 	}
+	public int divide(int a, int b) {
+		return a / b;
+	}
+
 }
 
 	
