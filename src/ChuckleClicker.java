@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class ChuckleClicker implements ActionListener {
 	public static void main(String[] args) throws Exception {
@@ -20,9 +21,10 @@ public class ChuckleClicker implements ActionListener {
 	JButton firstButton = new JButton();
 	JButton secondButton = new JButton();;
 	JPanel p = new JPanel();
+	JTextField t1 = new JTextField(20);
 	private void makeButtons() {
 		j.setVisible(true);
-		j.setDefaultCloseOperation(j.EXIT_ON_CLOSE);
+		j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		j.setSize(500, 500);
 		j.add(p);
 		p.add(firstButton);

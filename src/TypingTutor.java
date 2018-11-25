@@ -60,7 +60,7 @@ public void keyPressed(KeyEvent e) {
 		System.out.println("correct");
 	}
 	if(e.getKeyChar() != currentLetter) {
-		l.setBackground(Color.orangfse);
+		l.setBackground(Color.orange);
 		l.setOpaque(true);
 	}
 }
